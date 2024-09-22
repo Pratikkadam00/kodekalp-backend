@@ -1,5 +1,5 @@
 import express from "express";
-import authRoutes from "./route/authRoutes.js";
+import authRoutes from "./route/authRoute.js"
 import cors from "cors";
 import helmet from "helmet";
 import mongoose from "mongoose";
@@ -37,8 +37,5 @@ app.get("/", (req, res) => {
 // Routes
 app.use("/api/auth", authRoutes);
 
-
-// Error Handler
-app.use(errorHandler);
 
 export default app;

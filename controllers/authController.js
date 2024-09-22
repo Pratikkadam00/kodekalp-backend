@@ -1,5 +1,5 @@
-import User from "../models/User.js";
-import generateToken from "../utils/jwtUtils.js";
+import User from "../model/User.js";
+import generateToken from "../utils/generateToken.js";
 
 // Register User
 const registerUser = async (req, res) => {
